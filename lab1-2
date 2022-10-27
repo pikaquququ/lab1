@@ -9,7 +9,6 @@ public class Lab1_2 {
 
 	public static void main(String[] args) throws IOException {
 		
-		//read the test file
 		FileReader file = null;
 		try {
 			file = new FileReader("C:\\Users\\Desktop\\lab1-2.txt");
@@ -99,11 +98,9 @@ public class Lab1_2 {
 				s.push(sub);
 
 			}else {
-				//s.pop() is 'if'
 				if(s.pop().equals("if")) {
 					num_if_else++;
 				}
-				//s.pop() is 'else if'
 				else{
 					num_if_elseif_else++;
 					//Keep popping the top of the stack until the top is 'if'
